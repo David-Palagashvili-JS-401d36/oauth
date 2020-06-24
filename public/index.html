@@ -2,38 +2,40 @@
 <html>
 
 <head>
-  <title>Auth Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth Test</title>
 </head>
 
 <body>
-  <main>
 
-    <a id="oauth" href="#">Login</a>
+    <main>
 
-  </main>
+        <a id="oauth" href="#"> Login </a>
 
-  <script>
+    </main>
 
-    let URL = "https://github.com/login/oauth/authorize";
+    <script>
 
-    let options = {
-      client_id: process.env.CLIENT_ID,
-      redirect_uri: 'http://localhost:3000/oauth',
-      scope: 'read:user',
-      state: process.env.STATE
-    }
+        let URL = "https://github.com/login/oauth/authorize";
 
-    let QueryString = Object.keys(options).map((key) => {
-      return `${key}=` + encodeURIComponent(options[key]);
-    }).join("&");
+        let options = {
+            client_id: process.env.CLIENT_ID,
+            redirect_uri: 'http://localhost:3000/oauth',
+            scope: 'read:user',
+            state: process.env.STATE
+        }
 
-    let authURL = `${URL}?${QueryString}`;
+        let QueryString = Object.keys(options).map((key) => {
+            return `${key}=` + encodeURIComponent(options[key]);
+        }).join("&");
 
-    let link = document.getElementById('oauth');
-    link.setAttribute('href', authURL);
+        let authRequest = `${URL}?${QueryString}`;
 
-  </script>
+        let link = document.getElementById('oauth');
+        link.setAttribute('href', authRequest);
 
+    </script>
 
 </body>
 

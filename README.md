@@ -1,22 +1,51 @@
-# OAuth
+# OAuth Comparative Analysis
+Collaborating with Garhett Morgan for this assignment.
+## OAuth Provider Name 
 
-OAuth is "an open standard for access delegation" ... In other words, OAuth serves as a way to give users the ability to grant application access to services, without giving the application their password. Today, we will be giving our server the ability to "Login as You" at Google and other providers
+We used GitHub OAuth
 
-## Learning Objectives
+### Research Conducted By: Student Names
 
-### Students will be able to
+### Overall Score and Comments
+#### Score (Out of 10): 7
+#### General Comments
+Describe the stack (front-end only? full stack?), database, efficiency, etc. Describe the general usability and learnability
 
-#### Describe and Define
+#### Pros
+* Item 1
+* Item 2
 
-- The OAuth Process
-- The pros and cons of OAuth
-- Security concerns of OAuth
+#### Cons
+* Item 1
+* Item 2
 
-#### Execute
+### Ratings and Reviews
+#### Documentation
+Thoughts go here
 
-- Implement OAuth
-- Prepare a "Suitability Recommendation" doc and presentation
+#### Systems Requirements
+Above and beyond 'node' and 'linux', what dependencies or core requirements exist for this framework?  Can it play at AWS/Heroku?  Does it require a certain database?
 
-## Today's Outline
+#### Ramp-Up Projections
+How long would/should it take a team of mid-junior developers to become productive?
 
-<!-- To Be Completed By Instructor -->
+#### Community Support and Adoption levels
+How popular is this framework? What big companies are running on it? How is it "seen" in the general JS community?  Is there an active community of developers supporting and growing it?
+
+
+### Links and Resources
+* [framework](http://xyz.com)
+* [docs](http://xyz.com)
+* [examples/tutorials](http://xyz.com)
+
+### Code Demos
+* [live/running application](http://xyz.com)
+* [code repository](http://xyz.com)
+
+### Operating Instructions
+If someone were to download your repo (above), what steps do they need to take to run the application
+* `npm start`
+* Endpoint: `/foo/bar/`
+  * Returns a JSON object with abc in it.
+* Endpoint: `/bing/zing/`
+  * Returns a JSON object with xyz in it.

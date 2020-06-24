@@ -19,13 +19,15 @@ app.use(express.static('./public'));
 // Routes
 app.get('/oauth', oauth, (req, res) => {
   res.status(200).send(req.token);
+  res.header('token', req.token);
+  res.cookie('token', req.token);
 });
 
 module.exports = {
   server: app,
   start: (port) => {
     app.listen(port, () => {
-      console.log(`Server Up on ${port}`);
+      console.log(`our app is running on ${port}`);
     });
   },
 };
